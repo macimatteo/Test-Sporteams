@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.navbar{
+    position: sticky;
+    background-color: rgb(64, 136, 204);
+    
+}
+
+.logo{
+    font-size: 20px;
+    padding: 10px;
+}
+
+p{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.form{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.container{
+    padding-top: 80px;
+}
+
+
+#datiForm {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-radius: 12px;
+  }
+
+.containerForm {
+    padding: 2px 16px;
+}
+
+#btnNome{
+    display: inline-block;
+    padding-top: 10p;
+}
+
+/* CSS per la parte responsive*/
+
+@media (min-width: 500px){
+    .carousel-inner{display: none;}
+    #demo{display: none;}
+}
+@media (max-width: 500px) {
+    .container{display: none;}
+    .carousel-inner{display: contents;}
+    .arousel-control-prev {display: contents;}
+    #demo{display: contents;}
+
+
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+.carousel{
+    padding-left: 50px;
+    text-align: center;
+
+}
